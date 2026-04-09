@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">App06_Musicas</string>
+    <string name="nome_do_artista">Nome do artista</string>
+    <string name="nome_da_m_sica">Nome da música</string>
+    <string name="ano_da_m_sica">Ano da música</string>
+    <string name="salvar">Salvar</string>
+    <string name="app_de_m_sica">App Musicaly</string>
+    <string name="mpb">MPB</string>
+    <string name="rock">ROCK</string>
+    <string name="pop">POP</string>
+    <string name="internacional">Internacional</string>
+</resources>
