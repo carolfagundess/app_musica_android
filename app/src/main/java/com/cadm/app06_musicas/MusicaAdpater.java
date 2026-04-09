@@ -11,7 +11,7 @@ import java.util.List;
 
 public class MusicaAdpater extends RecyclerView.Adapter<MusicaAdpater.ViewHolder> {
 
-    private List<String> listaMusicas; 
+    private List<String> listaMusicas;
 
     // 2. Construtor para receber os dados
     public MusicaAdpater(List<String> lista) {

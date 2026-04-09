@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
     private Button btnAdicionar;
     private TextView txtLista;
 
-
-
+    RecyclerView recyclerView = findViewById(R.id.recyclerView);
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
