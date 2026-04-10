@@ -21,17 +21,21 @@ public class MusicaAdpater extends RecyclerView.Adapter<MusicaAdpater.ViewHolder
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+        View view = android.view.LayoutInflater.from(parent.getContext())
+                .inflate(R.layout.item_musica, parent, false);
+        return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-
+        // 2. Pega a música na posição atual e coloca no TextView
+        String musicaAtual = listaMusicas.get(position);
+        holder.nomeMusica.setText(musicaAtual);
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return listaMusicas.size();
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
@@ -39,7 +43,7 @@ public class MusicaAdpater extends RecyclerView.Adapter<MusicaAdpater.ViewHolder
 
         public ViewHolder(View itemView){
             super(itemView);
-            nomeMusica = itemView.findViewById(android.R.id.text1);
+            nomeMusica = itemView.findViewById(R.id.txtNomeMusicaItem);
         }
     }
 }
